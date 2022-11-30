@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@100;400;500;600;700&display=swap');
  
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	--image-sizing: 270px;
+	/* --image-sizing: 100%; */
+	--image-sizing: 240px;
+	--image-notice-sizing: 800px;
+	--icone-sizing: 24px;
 
 
 	/* Colors */
 
 	--color-prime: #FEFEFE;
 	--color-secondary: #070707;
-	--color-highlight: #61C9A8;
+	--color-highlight: #6F9CEB;
 }
 
 body {
 	color: var(--color-secondary);
-	background-image: linear-gradient(135deg, var(--color-prime), #E0E0E0 );
+	/* background-image: linear-gradient(135deg, var(--color-prime), #E0E0E0 ); */
+	background-color: #F6F6F6;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -36,4 +40,25 @@ a {
 .title1 {
 	font: bold 18px 'Montserrat', sans-serif;
 	cursor: default;
+}
+
+.title2 {
+	font: bold 24px 'Montserrat', sans-serif;
+	cursor: default;
+	color: var(--color-highlight);
+}
+
+.title3 {
+	font: 600 18px 'Montserrat', sans-serif;
+	color: var(--color-secondary);
+}
+
+.button-text {
+	font: 400 13px 'Montserrat', sans-serif;
+}
+
+.normal-text,
+.price {
+	font: 400 16px 'Montserrat', sans-serif;
+	color: var(--color-secondary);
 }

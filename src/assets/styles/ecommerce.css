@@ -2,6 +2,9 @@
 /* HEADER--------------------------------------------------- */
 header {
 	display: flex;
+	position:sticky;
+	z-index: 5;
+	top: 0;
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--color-highlight);
@@ -16,6 +19,7 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	height: 59px;
 	width: 100%;
 	max-width: 1300px;
 	padding: 12px
@@ -30,6 +34,7 @@ header {
 
 #search input {
 	width: 300px ;
+	color: var(--color-prime);
 }
 
 #search input,
@@ -37,6 +42,15 @@ header {
 	background: none;
 	border: none;
 	outline: none;
+}
+
+#search img {
+	cursor: pointer;
+}
+
+.options-header  a{
+	height: 24px;
+	width: 24px
 }
 
 .top-header .desejos {
@@ -50,6 +64,7 @@ nav {
 
 nav .title1 {
 	color: var(--color-prime);
+	cursor: pointer;
 }
 
 nav > ul {
@@ -73,8 +88,10 @@ nav > ul {
 }
 
 .primary-menu ul .title1:hover,
-nav .title1:hover {
-	opacity: 70%;
+nav .title1:hover,
+.options-header img:hover,
+#search img:hover {
+	filter: brightness(85%);
 }
 
 .primary-menu ul .title1 {
@@ -100,29 +117,92 @@ details .ul-type {
 
 /* MAIN--------------------------------------------------------------- */
 
-.destaque {
-	margin: 20px 0;
+.destaque,
+.news{
+	padding: 35px 70px;
+	border-bottom: 1px solid var(--color-highlight);
 }
 
-.cards {
+
+#cards {
 	display: flex;
-	justify-content: space-evenly;
-	margin-top: 20px;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	transition: scale 0.1s linear;
 }
 
 .card img {
+	align-self: center;
 	height: var(--image-sizing);
 	width: var(--image-sizing);
 }
 
+.card .price,
+.card h3 {
+	display: block;
+	margin: 5px 0;
+}
+
+.buttons-cart,
+.card .button-add-cart,
+.button-add-wishlist {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card .button-add-cart,
+.button-add-wishlist {
+	border-radius: 25px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	padding: 5px 12px;
+	cursor: pointer;
+}
+
+.card .button-add-cart{
+	background-color: var(--color-highlight);
+	color: var(--color-prime);
+}
+
+.card .button-add-cart:hover{
+	filter: brightness(85%)
+}
+
+.card .button-add-wishlist:hover{
+	text-decoration: underline;
+}
+
+.card .button-add-cart img,
+.button-add-wishlist img {
+	height: var(--icone-sizing);
+	width: var(--icone-sizing);
+	margin-right: 10px;
+}
+
+
 /* NOTICIA------------------------------------------------------ */
 
 .news {
-	margin: 20px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.news h2{
+	display: block;
 }
 
 #noticiadestaque {
-	margin-top: 15px;
+	align-self: center;
+	position: relative;
+	max-width: var(--image-notice-sizing);
+	margin-top: 30px;
 }
 
 #noticiadestaque figure {
@@ -132,29 +212,50 @@ details .ul-type {
 }
 
 #noticiadestaque img {
-	width: 500px;
+	border-radius: 10px;
+
+	filter: brightness(70%);
+	width: var(--image-notice-sizing);
 }
 
 #noticiadestaque figcaption {
-	max-width: 700px;
+	position: absolute;
+	transition: scale 0.1s linear;
+	bottom: 50px;
+	max-width: var(--image-notice-sizing);
 }
 
 #noticiadestaque h3 {
 	margin-bottom: 10px;
+	color: var(--color-prime);
+	transition: all 0.1s linear;
+}
+
+#noticiadestaque:hover h3 {
+	color: var(--color-highlight);
+}
+
+#noticiadestaque:hover p>a {
+	text-decoration: underline;
 }
 
 #noticiadestaque p {
+	color: var(--color-prime);
 	max-width: 600px;
 }
 
+.card:hover, 
+#noticiadestaque:hover figcaption{
+	scale: 1.05;
+}
 
 /* FOOTER--------------------------------------------------------------------------- */
 footer {
+	padding: 35px 70px 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: 15px 0;
 }
 
 footer div {
@@ -177,3 +278,7 @@ footer .social {
 footer .city {
 	margin-top: 15px;
 }
+
+
+/* MAIN________________________________ */
+
