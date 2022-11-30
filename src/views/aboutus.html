@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <link rel="stylesheet" href="../assets/styles/ecommerce.css">
+
+    <title>Lista de Desejos - Bossfoot</title>
+
+</head>
+<body>
+	<div id="container">
+		<header>
+			<div class="top-header">
+				
+			    <h1 class="logo">Bossfoot</h1>
+	
+			    <form id="search" action="/views/products.html" method="GET">
+				  <input type="search" name="q" id="search-bar">
+				  <button type="submit">
+					<img src="../assets/icons/search.svg" alt="Pesquisa.">
+				  </button>
+			    </form>
+	
+			    <div class="options-header">
+				  <a class="desejos" href="desejos.html">
+					<img src="../assets/icons/heart.svg" alt="Lista de desejos (icone de coração).">
+				  </a>
+	
+				  <a class="carrinho" href="cart.html">
+					<img src="../assets/icons/shopping-cart.svg" alt="Carrinho de compras.">
+				  </a>
+			    </div>
+			</div>
+	
+			<nav>
+			    <ul>
+				  <li>
+					<a href="index.html" class="title1">Home</a>
+				  </li>
+	
+				<li>
+					<details class="primary-menu">
+						<summary class="title1">Categorias</summary>
+						<ul class="ul-category">
+						  <li>
+							<details open>
+							    <summary class="title1">Marcas</summary>
+							    <ul class="ul-marcas">
+								  <li><a href="products.html?q=nike">Nike</a></li>
+								  <li><a href="products.html?q=lacoste">Lacoste</a></li>
+							    </ul>
+							</details>
+						  </li>
+					    
+						  <li>
+							<details open>
+							    <summary class="title1">Tipo</summary>
+							    <ul class="ul-type">
+								  <li><a href="products.html?q=esporte">Esporte</a></li>
+								  <li><a href="products.html?q=casual">Casual</a></li>
+								  <li><a href="products.html?q=masculino">Masculino</a></li>
+								  <li><a href="products.html?q=feminino">Feminino</a></li>
+							    </ul>
+							</details>
+						  </li>
+	
+						  <li><a href="products.html" class="title1">Todos</a></li>
+					    </ul>
+					</details>
+					
+				</li>
+				  <li>
+					<a href="aboutus.html" class="title1">Sobre nós</a>
+				  </li>
+			    </ul>
+			</nav>
+		</header>
+
+		<main style="display: flex; justify-content: space-evenly; margin: 20px 0;">
+			<section>
+				<h2>Quem somos?</h2>
+				<br>
+				<p>Somo empresa lider de vendas de calsados originais no Brasil!</p>
+				<br>
+				<p>Procuramos sempre manter em nossos atendimentos:</p>
+				<p>
+					<ul>
+						<li>Qualidade</li>
+						<li>Acomodação</li>
+						<li>Diversidade</li>
+					</ul>
+				</p>
+			</section>
+			<section>
+				<h2>Nosso parceiros</h2>
+				<br>
+				<img src="../assets/lacoste-logo.png" alt="Logo Lacoste" style="width: 200px; margin-right: 15px;">
+				<img src="../assets/nike-logo.png" alt="Logo Nike" style="width: 200px;">
+			</section>
+		</main>
+
+		<hr>
+
+		<footer style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 15px 0;">
+			<h2>Contato</h2>
+			<div style="display: flex; justify-content: space-between; margin-top: 15px;">
+				<section style=" width: 50%;">
+					<p>Vitor Lopes Franco</p>
+					<p>E-mail: vitorlopes089@gmail.com</p>
+				</section>
+				<section style=" width: 50%; text-align: justify;">
+					<p>Sites </p>
+					<p>GitHub: https://github.com/Vitinn089</p>
+					<p>Linkedin: https://www.linkedin.com/in/vitor-lopes-991238171</p>
+				</section>
+			</div>
+			<p style="margin-top: 15px;">BH / MG</p>
+		</footer>
+	</div>
+</body>
+</html>

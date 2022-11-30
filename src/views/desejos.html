@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+	<link rel="stylesheet" href="../assets/styles/ecommerce.css">
+
+    <title>Lista de Desejos - Bossfoot</title>
+
+    
+</head>
+<body>
+    <div id="container">
+	<header>
+		<div class="top-header">
+			
+		    <h1 class="logo">Bossfoot</h1>
+
+		    <form id="search" action="/views/products.html" method="GET">
+			  <input type="search" name="q" id="search-bar">
+			  <button type="submit">
+				<img src="../assets/icons/search.svg" alt="Pesquisa.">
+			  </button>
+		    </form>
+
+		    <div class="options-header">
+			  <a class="desejos" href="desejos.html">
+				<img src="../assets/icons/heart.svg" alt="Lista de desejos (icone de coração).">
+			  </a>
+
+			  <a class="carrinho" href="cart.html">
+				<img src="../assets/icons/shopping-cart.svg" alt="Carrinho de compras.">
+			  </a>
+		    </div>
+		</div>
+
+		<nav>
+		    <ul>
+			  <li>
+				<a href="index.html" class="title1">Home</a>
+			  </li>
+
+			<li>
+				<details class="primary-menu">
+					<summary class="title1">Categorias</summary>
+					<ul class="ul-category">
+					  <li>
+						<details open>
+						    <summary class="title1">Marcas</summary>
+						    <ul class="ul-marcas">
+							  <li><a href="products.html?q=nike">Nike</a></li>
+							  <li><a href="products.html?q=lacoste">Lacoste</a></li>
+						    </ul>
+						</details>
+					  </li>
+				    
+					  <li>
+						<details open>
+						    <summary class="title1">Tipo</summary>
+						    <ul class="ul-type">
+							  <li><a href="products.html?q=esporte">Esporte</a></li>
+							  <li><a href="products.html?q=casual">Casual</a></li>
+							  <li><a href="products.html?q=masculino">Masculino</a></li>
+							  <li><a href="products.html?q=feminino">Feminino</a></li>
+						    </ul>
+						</details>
+					  </li>
+
+					  <li><a href="products.html" class="title1">Todos</a></li>
+				    </ul>
+				</details>
+				
+			</li>
+			  <li>
+				<a href="aboutus.html" class="title1">Sobre nós</a>
+			  </li>
+		    </ul>
+		</nav>
+	</header>
+
+        <main>
+            <section class="destaque" style="margin: 20px 0;">
+
+			<h2>Lista de Desejos</h2>
+
+			<div class="cards" style="display: grid; grid-template-columns: 1fr 1fr 1fr; justify-content: space-evenly; margin-top: 20px;">
+
+				<div class="card">
+					<img src="../assets/images/products/lacoste-masculino-1.avif" alt="Tênis Lacoste AG-LT 21">
+					<h3>Tênis Lacoste AG-LT 21 - Masculino</h3> R$ 649,99 <br>
+					<button class="button-add-cart">Adicionar ao carrinho</button> <br>
+					<button class="button-add-wishlist">Adicionar à lista de desejos</button>
+				</div>
+
+				<div class="card">
+				<img src="../assets/images/products/lacoste-feminino-game-advance.avif" alt="Tênis Lacoste Feminino Game Advance">
+				<h3>Tênis Lacoste Feminino Game Advance</h3> R$ 574,99 <br>
+				<button class="button-add-cart">Adicionar ao carrinho</button> <br>
+				<button class="button-add-wishlist">Adicionar à lista de desejos</button>
+				</div>
+
+				<div class="card">
+				<img src="../assets/images/products/lacoste-masculino-ag-lt21-ultra.avif" alt="Tênis Lacoste Masculino AG LT21 Ultra">
+				<h3>Tênis Lacoste Masculino AG LT21 Ultra</h3> R$ 1238,99 <br>
+				<button class="button-add-cart">Adicionar ao carrinho</button> <br>
+				<button class="button-add-wishlist">Adicionar à lista de desejos</button>
+				</div>
+
+				<div class="card">
+				<img src="../assets/images/products/nike-feminino-air-force-1-07-ess.jpg" alt="Tênis Nike Femino Air Force 1 ''07 ESS">
+				<h3>Tênis Nike Feminio Air Force 1 ''07 ESS</h3> R$ 489,99 <br>
+				<button class="button-add-cart">Adicionar ao carrinho</button> <br>
+				<button class="button-add-wishlist">Adicionar à lista de desejos</button>
+				</div>
+
+				<div class="card">
+				<img src="../assets/images/products/nike-masculino-air-max-alphat-rainer-4.jpg" alt="Tênis Nike Masculino Air Max Alphat Rainer 4">
+				<h3>Tênis Nike Masculino Air Max Alphat Rainer 4</h3> R$ 679,99 <br>
+				<button class="button-add-cart">Adicionar ao carrinho</button> <br>
+				<button class="button-add-wishlist">Adicionar à lista de desejos</button>
+				</div>
+
+				<div class="card">
+				<img src="../assets/images/products/nike-masculino-jordan-air-200e.jpg" alt="Tênis Lacoste AG-LT 21">
+				<h3>Tênis Nike Masculino Jordan Air 200E</h3> R$ 1200,00 <br>
+				<button class="button-add-cart">Adicionar ao carrinho</button> <br>
+				<button class="button-add-wishlist">Adicionar à lista de desejos</button>
+				</div>
+				
+			</div>
+		
+		</section>
+        </main>
+
+        <hr>
+
+	  <footer style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 15px 0;">
+		<h2>Contato</h2>
+		<div style="display: flex; justify-content: space-between; margin-top: 15px;">
+			<section style=" width: 50%;">
+				<p>Vitor Lopes Franco</p>
+				<p>E-mail: vitorlopes089@gmail.com</p>
+			</section>
+			<section style=" width: 50%; text-align: justify;">
+				<p>Sites </p>
+				<p>GitHub: https://github.com/Vitinn089</p>
+				<p>Linkedin: https://www.linkedin.com/in/vitor-lopes-991238171</p>
+			</section>
+		</div>
+		<p style="margin-top: 15px;">BH / MG</p>
+  </footer>
+    </div>
+</body>
+</html>

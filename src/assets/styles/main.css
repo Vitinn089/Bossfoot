@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Montserrat:wght@100;400;700&display=swap');
+ 
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	--image-sizing: 270px;
+
+
+	/* Colors */
+
+	--color-prime: #FEFEFE;
+	--color-secondary: #070707;
+	--color-highlight: #61C9A8;
+}
+
+body {
+	color: var(--color-secondary);
+	background-image: linear-gradient(135deg, var(--color-prime), #E0E0E0 );
+	font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+	list-style: none;
+}
+summary::marker {
+	content: "";
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-highlight);
+	cursor: pointer !important;
+}
+
+.title1 {
+	font: bold 18px 'Montserrat', sans-serif;
+	cursor: default;
+}

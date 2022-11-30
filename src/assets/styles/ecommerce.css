@@ -1,0 +1,179 @@
+
+/* HEADER--------------------------------------------------- */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--color-highlight);
+}
+
+.logo {
+	color: var(--color-prime);
+	font: 400 35px 'Gloria Hallelujah', cursive;
+}
+
+.top-header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1300px;
+	padding: 12px
+}
+
+#search {
+	display: flex;
+	border: solid 2px var(--color-prime);
+	border-radius: 8px;
+	padding: 5px;
+}
+
+#search input {
+	width: 300px ;
+}
+
+#search input,
+#search button {
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.top-header .desejos {
+	margin-right: 10px;
+}
+
+nav {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+nav .title1 {
+	color: var(--color-prime);
+}
+
+nav > ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.primary-menu > ul {
+	background-color: white;
+	padding: 25px;
+	position: absolute;
+	display: flex;
+	gap: 30px;
+	margin-top: 15px;
+	border-radius: 4px;
+	left: -100%;
+}
+
+.primary-menu ul li ul > li + li {
+	margin-top: 5px;
+}
+
+.primary-menu ul .title1:hover,
+nav .title1:hover {
+	opacity: 70%;
+}
+
+.primary-menu ul .title1 {
+	color: var(--color-secondary);
+	margin-bottom: 10px;
+	width: 82px;
+}
+
+details {
+	display: flex;
+	position: relative;
+}
+
+details summary {
+	align-self: center;
+}
+
+details .ul-marcas,
+details .ul-type {
+	flex-direction: column;
+}
+
+
+/* MAIN--------------------------------------------------------------- */
+
+.destaque {
+	margin: 20px 0;
+}
+
+.cards {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 20px;
+}
+
+.card img {
+	height: var(--image-sizing);
+	width: var(--image-sizing);
+}
+
+/* NOTICIA------------------------------------------------------ */
+
+.news {
+	margin: 20px 0;
+}
+
+#noticiadestaque {
+	margin-top: 15px;
+}
+
+#noticiadestaque figure {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#noticiadestaque img {
+	width: 500px;
+}
+
+#noticiadestaque figcaption {
+	max-width: 700px;
+}
+
+#noticiadestaque h3 {
+	margin-bottom: 10px;
+}
+
+#noticiadestaque p {
+	max-width: 600px;
+}
+
+
+/* FOOTER--------------------------------------------------------------------------- */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 0;
+}
+
+footer div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+	width: 100%;
+    	max-width: 700px;
+}
+
+footer .pessoal {
+	width: 50%;
+}
+
+footer .social {
+	width: 50%;
+	text-align: justify;
+}
+
+footer .city {
+	margin-top: 15px;
+}
