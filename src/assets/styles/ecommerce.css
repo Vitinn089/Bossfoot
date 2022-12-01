@@ -59,7 +59,7 @@ header {
 
 nav {
 	width: 100%;
-	margin-bottom: 15px;
+	margin: 15px 0;
 }
 
 nav .title1 {
@@ -120,7 +120,6 @@ details .ul-type {
 .destaque,
 .news{
 	padding: 35px 70px;
-	border-bottom: 1px solid var(--color-highlight);
 }
 
 
@@ -146,6 +145,11 @@ details .ul-type {
 .card h3 {
 	display: block;
 	margin: 5px 0;
+}
+
+span.price {
+	color: var(--color-highlight);
+	font-weight: 600
 }
 
 .buttons-cart,
@@ -215,7 +219,12 @@ details .ul-type {
 	border-radius: 10px;
 
 	filter: brightness(70%);
+	transition: filter 0.2s linear;
 	width: var(--image-notice-sizing);
+}
+
+#noticiadestaque:hover img {
+	filter: brightness(50%);
 }
 
 #noticiadestaque figcaption {
@@ -224,6 +233,7 @@ details .ul-type {
 	bottom: 50px;
 	max-width: var(--image-notice-sizing);
 }
+
 
 #noticiadestaque h3 {
 	margin-bottom: 10px;
@@ -251,6 +261,7 @@ details .ul-type {
 
 /* FOOTER--------------------------------------------------------------------------- */
 footer {
+	background-color: var(--color-highlight);
 	padding: 35px 70px 20px;
 	display: flex;
 	flex-direction: column;
@@ -258,27 +269,96 @@ footer {
 	justify-content: center;
 }
 
-footer div {
-	display: flex;
-	justify-content: space-between;
+#container footer h2,
+.footer-container h3 {
+	color: var(--color-prime);
+}
+
+
+
+.footer-container h3 {
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+footer .footer-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:
+	"pessoal social";
+	justify-content: space-center ;
 	margin-top: 15px;
 	width: 100%;
     	max-width: 700px;
 }
 
-footer .pessoal {
-	width: 50%;
+.footer-container span {
+	font-weight: 700;
+	color: var(--color-prime);
 }
 
-footer .social {
-	width: 50%;
+.footer-container section p:first-child span {
+	display: block;
+	color: var(--color-highlight);
+	margin-bottom: 5px;
+}
+
+footer section {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+footer .pessoal {
+	grid-area: pessoal;
+}
+
+footer .pessoal a{
+color: var(--color-secondary);
+}
+
+footer .pessoal a:hover {
+	text-decoration: underline;
+}
+
+footer .pessoal p:last-child,
+footer .pessoal h3 + p {
+	hyphens: manual;
 	text-align: justify;
+}
+
+footer .pessoal h3 + p {
+	align-self: flex-start;
+	margin-bottom: 5px;
+}
+
+
+footer .social {
+	grid-area: social;
+}
+
+footer .social-buttons,
+footer .social-buttons a {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+footer .social-buttons a:hover {
+	opacity: 60%;
+	text-decoration: underline;
+	text-decoration-color: var(--color-prime);
+}
+
+footer .social-buttons a img{
+	margin-right: 5px;
+}
+
+footer .social-buttons a + a{
+	margin-left: 15px;
 }
 
 footer .city {
 	margin-top: 15px;
 }
-
-
-/* MAIN________________________________ */
-
